@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include aikyam *.css
+recursive-include aikyam *.csv
+recursive-include aikyam *.html
+recursive-include aikyam *.ico
+recursive-include aikyam *.js
+recursive-include aikyam *.json
+recursive-include aikyam *.md
+recursive-include aikyam *.png
+recursive-include aikyam *.py
+recursive-include aikyam *.svg
+recursive-include aikyam *.txt
+recursive-exclude aikyam *.pyc
