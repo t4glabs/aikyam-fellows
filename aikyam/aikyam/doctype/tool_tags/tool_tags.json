@@ -13,13 +13,13 @@
    "fieldname": "tag",
    "fieldtype": "Link",
    "label": "Tag",
-   "options": "Tags"
+   "options": "Tag Items"
   }
  ],
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2023-10-20 19:18:54.516699",
+ "modified": "2023-10-20 19:59:55.360635",
  "modified_by": "Administrator",
  "module": "Aikyam",
  "name": "Tool Tags",
