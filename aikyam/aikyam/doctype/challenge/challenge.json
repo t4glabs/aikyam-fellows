@@ -1,5 +1,6 @@
 {
  "actions": [],
+ "allow_guest_to_view": 1,
  "allow_rename": 1,
  "autoname": "format:{title}-Challenge-{last_date}",
  "creation": "2023-10-20 18:41:30.946881",
@@ -11,11 +12,7 @@
   "title",
   "description",
   "last_date",
-  "lft",
-  "rgt",
-  "is_group",
-  "old_parent",
-  "parent_challenge"
+  "route"
  ],
  "fields": [
   {
@@ -34,44 +31,15 @@
    "label": "Last Date"
   },
   {
-   "fieldname": "lft",
-   "fieldtype": "Int",
-   "hidden": 1,
-   "label": "Left",
-   "no_copy": 1,
-   "read_only": 1
-  },
-  {
-   "fieldname": "rgt",
-   "fieldtype": "Int",
-   "hidden": 1,
-   "label": "Right",
-   "no_copy": 1,
-   "read_only": 1
-  },
-  {
-   "default": "0",
-   "fieldname": "is_group",
-   "fieldtype": "Check",
-   "label": "Is Group"
-  },
-  {
-   "fieldname": "old_parent",
-   "fieldtype": "Link",
-   "label": "Old Parent",
-   "options": "Challenge"
-  },
-  {
-   "fieldname": "parent_challenge",
-   "fieldtype": "Link",
-   "label": "Parent Challenge",
-   "options": "Challenge"
+   "fieldname": "route",
+   "fieldtype": "Data",
+   "label": "Route"
   }
  ],
+ "has_web_view": 1,
  "index_web_pages_for_search": 1,
- "is_tree": 1,
  "links": [],
- "modified": "2023-10-20 19:18:18.748867",
+ "modified": "2023-10-20 23:00:40.951943",
  "modified_by": "Administrator",
  "module": "Aikyam",
  "name": "Challenge",
@@ -79,6 +47,7 @@
  "nsm_parent_field": "parent_challenge",
  "owner": "Administrator",
  "permissions": [],
+ "route": "challenge",
  "sort_field": "modified",
  "sort_order": "DESC",
  "states": []
