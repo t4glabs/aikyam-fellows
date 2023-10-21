@@ -1,4 +1,16 @@
-<div>
+<!-- <div>
 	<a href="{{ doc.route }}">{{ doc.title or doc.name }}</a>
+</div> -->
+
+<div>
+	<!-- <a href="{{ doc.route }}">{{ doc.title or doc.name }}</a> -->
+	<div class="card" style="width:18rem;">
+		<div class="card-body mt-2">
+			<h5 class="card-title"> {{ doc.challenge_name }}</h5>
+			<p class="card-text"> {{ doc.description }}</p>
+			<p class="card-text"> Last date: {{ doc.last_date }}</p>
+			<a href="/{{ doc.route }}" class="btn btn-primary"> Apply </a>
+		</div>
+	</div>
 </div>
 <!-- this is a sample default list template -->

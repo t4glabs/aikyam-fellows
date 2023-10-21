@@ -1,8 +1,8 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "format:{name1}-{challenge_name}-{###}",
- "creation": "2023-10-20 23:21:51.222558",
+ "autoname": "format:{email}-{challenge_name}-submission",
+ "creation": "2023-10-21 09:54:04.852282",
  "default_view": "List",
  "doctype": "DocType",
  "editable_grid": 1,
@@ -11,20 +11,43 @@
   "challenge_name",
   "name1",
   "email",
+  "phone_number",
   "profession",
+  "attach_file",
+  "feedback",
   "input1",
   "input2"
  ],
  "fields": [
   {
-   "fieldname": "name1",
+   "fieldname": "challenge_name",
    "fieldtype": "Data",
-   "label": "Name"
+   "label": "Challenge Name"
   },
   {
    "fieldname": "email",
    "fieldtype": "Data",
    "label": "Email"
+  },
+  {
+   "fieldname": "phone_number",
+   "fieldtype": "Phone",
+   "label": "Phone Number"
+  },
+  {
+   "fieldname": "attach_file",
+   "fieldtype": "Attach",
+   "label": "Attach File"
+  },
+  {
+   "fieldname": "feedback",
+   "fieldtype": "Long Text",
+   "label": "Feedback"
+  },
+  {
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "label": "Name"
   },
   {
    "fieldname": "profession",
@@ -40,19 +63,14 @@
    "fieldname": "input2",
    "fieldtype": "Data",
    "label": "Input2"
-  },
-  {
-   "fieldname": "challenge_name",
-   "fieldtype": "Data",
-   "label": "Challenge Name"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-10-21 09:45:02.565540",
+ "modified": "2023-10-21 12:05:02.056073",
  "modified_by": "Administrator",
  "module": "Aikyam",
- "name": "Challenge Registration",
+ "name": "Challenge Submission",
  "naming_rule": "Expression",
  "owner": "Administrator",
  "permissions": [

@@ -1,7 +1,17 @@
 {% extends "templates/web.html" %}
 
 {% block page_content %}
-<h1>{{ title }}</h1>
+
+<h1>{{ challenge_name }}</h1>
+
+<div class="text-center mt-5">
+    <h4> {{ challenge_name }}</h4>
+    <h4> Description : {{ description }}</h4>
+    <p> Last Date : {{ last_date }} </p>
+
+    <a class="btn btn-primary mt-2" href="/{{ submission_url }}/new?challenge={{ challenge_url}}"> Apply</a>
+</div>
+
 {% endblock %}
 
 <!-- this is a sample default web page template -->
