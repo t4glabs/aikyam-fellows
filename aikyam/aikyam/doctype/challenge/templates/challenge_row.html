@@ -1,10 +1,5 @@
 <!-- <div>
-	<a href="{{ doc.route }}">{{ doc.title or doc.name }}</a>
-</div> -->
-
-<div>
-	<!-- <a href="{{ doc.route }}">{{ doc.title or doc.name }}</a> -->
-	<div class="card" style="width:18rem;">
+	<div class="card">
 		<div class="card-body mt-2">
 			<h5 class="card-title"> {{ doc.challenge_name }}</h5>
 			<p class="card-text"> {{ doc.description }}</p>
@@ -12,5 +7,106 @@
 			<a href="/{{ doc.route }}" class="btn btn-primary"> Apply </a>
 		</div>
 	</div>
+</div> -->
+{% block style %}
+<link rel="stylesheet" type="text/css" href="/assets/aikyam/css/style.css">
+{% endblock %}
+
+<div class="live-courses">
+	<div class="course-cards-parent cards-parent">
+		<div class="common-card-style course-card" data-course="introduction-to-erpnext"
+			data-rating="4.6923076923076925" data-enrollment="7460" data-creation="2021-08-12 15:44:05.206560">
+
+			<div class="course-image " style="background-image: url( /files/erpnext-small.svg );">
+				<div class="course-tags">
+
+					<div class="course-card-pills">Beginner</div>
+
+				</div>
+
+			</div>
+
+			<div class="course-card-content">
+				<div class="course-card-meta">
+
+
+					<div class="vertically-center">
+						<svg class="icon icon-md">
+							<use href="#icon-education"></use>
+						</svg>
+						8
+					</div>
+
+					<div class="vertically-center">
+						<svg class="icon  icon-md">
+							<use class="" href="#icon-users">
+							</use>
+						</svg>
+						7460
+					</div>
+
+
+
+					<div class="vertically-center">
+						<svg class="icon icon-md">
+							<use href="#icon-star"></use>
+						</svg>
+						4.69
+					</div>
+
+				</div>
+
+				<div class="course-card-title">
+					{{ doc.challenge_name }}
+				</div>
+
+				<div class="short-introduction">
+					{{ doc.short_description }}
+				</div>
+
+
+
+				<div class="course-card-footer">
+
+					<div class="course-card-instructors">
+
+
+
+
+
+						<span class="avatar avatar-small" title="Reema Mehta">
+							<a class="button-links" href="/users/reema">
+
+								<img class="avatar-frame standard-image" style="object-fit: cover;"
+									src="/files/reema-min.jpeg" title="Reema Mehta">
+
+							</a>
+						</span>
+
+
+
+						<a class="button-links" href="/users/reema">
+							<span class="course-instructor">
+
+								Reema Mehta
+
+							</span>
+						</a>
+					</div>
+
+					<div class="course-price">
+
+						Free
+
+					</div>
+				</div>
+
+
+
+				<a class="stretched-link" href="/{{ doc.route }}"></a>
+
+
+			</div>
+		</div>
+	</div>
 </div>
-<!-- this is a sample default list template -->

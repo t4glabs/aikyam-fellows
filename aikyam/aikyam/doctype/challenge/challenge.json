@@ -11,6 +11,7 @@
  "field_order": [
   "challenge_name",
   "challenge_url",
+  "short_description",
   "description",
   "last_date",
   "publish",
@@ -54,13 +55,18 @@
    "fieldtype": "Data",
    "hidden": 1,
    "label": "Challenge url"
+  },
+  {
+   "fieldname": "short_description",
+   "fieldtype": "Data",
+   "label": "Short description"
   }
  ],
  "has_web_view": 1,
  "index_web_pages_for_search": 1,
  "is_published_field": "publish",
  "links": [],
- "modified": "2023-10-22 12:01:03.133410",
+ "modified": "2023-10-22 13:56:14.905699",
  "modified_by": "Administrator",
  "module": "Aikyam",
  "name": "Challenge",
