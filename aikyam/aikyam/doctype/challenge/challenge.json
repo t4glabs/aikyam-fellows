@@ -60,7 +60,7 @@
  "index_web_pages_for_search": 1,
  "is_published_field": "publish",
  "links": [],
- "modified": "2023-10-21 12:58:27.472178",
+ "modified": "2023-10-22 12:01:03.133410",
  "modified_by": "Administrator",
  "module": "Aikyam",
  "name": "Challenge",
@@ -80,7 +80,7 @@
    "write": 1
   }
  ],
- "route": "challenges",
+ "route": "solve",
  "sort_field": "modified",
  "sort_order": "DESC",
  "states": []
