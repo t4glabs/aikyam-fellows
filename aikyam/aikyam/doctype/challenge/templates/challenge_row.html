@@ -10,6 +10,14 @@
 </div> -->
 {% block style %}
 <link rel="stylesheet" type="text/css" href="/assets/aikyam/css/style.css">
+<style>
+	.result{
+		display: grid;
+		grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+		grid-gap: 2rem;
+		align-items: center;
+	}
+</style>
 {% endblock %}
 
 <div class="live-courses">
@@ -17,7 +25,7 @@
 		<div class="common-card-style course-card" data-course="introduction-to-erpnext"
 			data-rating="4.6923076923076925" data-enrollment="7460" data-creation="2021-08-12 15:44:05.206560">
 
-			<div class="course-image " style="background-image: url( /files/erpnext-small.svg );">
+			<div class="course-image " style="background-image: url('{{doc.photo }}') ;">
 				<div class="course-tags">
 
 					<div class="course-card-pills">Beginner</div>
@@ -30,12 +38,7 @@
 				<div class="course-card-meta">
 
 
-					<div class="vertically-center">
-						<svg class="icon icon-md">
-							<use href="#icon-education"></use>
-						</svg>
-						8
-					</div>
+					
 
 					<div class="vertically-center">
 						<svg class="icon  icon-md">
@@ -47,12 +50,7 @@
 
 
 
-					<div class="vertically-center">
-						<svg class="icon icon-md">
-							<use href="#icon-star"></use>
-						</svg>
-						4.69
-					</div>
+					
 
 				</div>
 
@@ -62,6 +60,9 @@
 
 				<div class="short-introduction">
 					{{ doc.short_description }}
+				</div>
+				<div class="pb-2">
+					Last date: {{ doc.last_date }}
 				</div>
 
 
@@ -74,31 +75,19 @@
 
 
 
-						<span class="avatar avatar-small" title="Reema Mehta">
-							<a class="button-links" href="/users/reema">
-
-								<img class="avatar-frame standard-image" style="object-fit: cover;"
-									src="/files/reema-min.jpeg" title="Reema Mehta">
-
-							</a>
-						</span>
+						
 
 
 
-						<a class="button-links" href="/users/reema">
+						<a class="button-links btn btn-primary" href="/users/reema">
 							<span class="course-instructor">
 
-								Reema Mehta
+								Apply 
 
 							</span>
 						</a>
 					</div>
 
-					<div class="course-price">
-
-						Free
-
-					</div>
 				</div>
 
 
