@@ -1,6 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "field:category",
  "creation": "2023-10-24 15:17:52.327509",
  "default_view": "List",
  "doctype": "DocType",
@@ -13,15 +14,17 @@
   {
    "fieldname": "category",
    "fieldtype": "Data",
-   "label": "Category"
+   "label": "Category",
+   "unique": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-10-24 15:32:08.376151",
+ "modified": "2023-10-25 00:47:49.183830",
  "modified_by": "Administrator",
  "module": "Aikyam",
  "name": "Toolkit Category",
+ "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [
   {
