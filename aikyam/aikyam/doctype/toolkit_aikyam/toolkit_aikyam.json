@@ -1,5 +1,6 @@
 {
  "actions": [],
+ "allow_import": 1,
  "allow_rename": 1,
  "creation": "2023-10-23 16:51:59.818481",
  "default_view": "List",
@@ -56,7 +57,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-10-24 15:18:56.073505",
+ "modified": "2023-10-25 09:41:39.579529",
  "modified_by": "Administrator",
  "module": "Aikyam",
  "name": "Toolkit Aikyam",
