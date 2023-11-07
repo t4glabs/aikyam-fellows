@@ -215,3 +215,9 @@ app_license = "MIT"
 # auth_hooks = [
 #	"aikyam.auth.validate"
 # ]
+
+# Website redirects
+website_redirects = [
+    {"source": "/toolkit", "target": f"/toolkit/Engagement Kit"},
+
+]
