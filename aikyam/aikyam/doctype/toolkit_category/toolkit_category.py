@@ -13,3 +13,18 @@ class ToolkitCategory(Document):
 			'route': f'/toolkit/{self.name}'
 		})
 		sidebar.save()
+	
+	def after_delete(self):
+		sidebar = get_doc('Website Sidebar', 'ToolKit Sidebar')
+		items = sidebar.get('sidebar_items')
+		for item in items:
+			if item.title == self.category:
+				items.remove(item)
+				break
+				
+		sidebar.save()
+
+
+
+
+
