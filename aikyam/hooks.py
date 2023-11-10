@@ -218,6 +218,6 @@ app_license = "MIT"
 
 # Website redirects
 website_redirects = [
-    {"source": "/toolkit", "target": f"/toolkit/Engagement Kit"},
+    {"source": "/toolkit", "target": f"/toolkit/Showcase"},
 
 ]
