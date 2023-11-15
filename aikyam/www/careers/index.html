@@ -1,0 +1,31 @@
+{% extends "templates/web.html" %}
+
+{% block title %}{{ _("Careers") }}{% endblock %}
+
+{% block page_content %}
+    <section class="section section-padding-top section-padding-bottom" data-section-idx="1" data-section-template="Hero">
+        <div class="container">
+            <div class="hero">
+                <div class="hero-content">
+                    <h1 class="hero-title">Open Positions </h1>
+                    <p class="hero-subtitle">
+                        Be a part of Aikyam 
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section> 
+    <section class="section section-padding-top section-padding-bottom bg-light" data-section-idx="2" data-section-template="Open Positions">    
+        <div class="container">
+            {% for job in open_jobs %}
+            <div style="padding-bottom: 3rem; max-width: 600px;">
+                <h3>{{job.job_title}}</h3>
+                <p style="line-height: 1.5">{{job.custom_introduction}}</p>
+                <p><a href="/{{job.route}}">Explore {{job.job_title}} →</a></p>
+            </div>
+            {% endfor %}
+        </div>
+    </section>
+<!-- </div> -->
+
+{% endblock %}

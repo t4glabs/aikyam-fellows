@@ -1,5 +1,6 @@
 {
  "actions": [],
+ "allow_import": 1,
  "allow_rename": 1,
  "autoname": "field:category",
  "creation": "2023-10-24 15:17:52.327509",
@@ -20,7 +21,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-10-25 00:47:49.183830",
+ "modified": "2023-11-09 14:13:35.581268",
  "modified_by": "Administrator",
  "module": "Aikyam",
  "name": "Toolkit Category",

@@ -1,5 +1,6 @@
 {
  "actions": [],
+ "allow_import": 1,
  "allow_rename": 1,
  "autoname": "field:tag",
  "creation": "2023-10-20 18:47:21.650566",
@@ -22,7 +23,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-10-20 19:17:41.567930",
+ "modified": "2023-11-09 12:58:33.922752",
  "modified_by": "Administrator",
  "module": "Aikyam",
  "name": "Tag Items",
