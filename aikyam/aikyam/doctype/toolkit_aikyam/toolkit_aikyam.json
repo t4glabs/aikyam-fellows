@@ -38,8 +38,7 @@
   {
    "fieldname": "content_link",
    "fieldtype": "Data",
-   "label": "Content Link",
-   "reqd": 1
+   "label": "Content Link"
   },
   {
    "fieldname": "tags",
@@ -57,7 +56,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-10-25 09:41:39.579529",
+ "modified": "2023-11-15 13:50:47.806312",
  "modified_by": "Administrator",
  "module": "Aikyam",
  "name": "Toolkit Aikyam",
