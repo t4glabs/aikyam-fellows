@@ -1,0 +1,31 @@
+{
+ "cards": [
+  {
+   "card": "Open Compliance"
+  },
+  {
+   "card": "Overdue Compliance"
+  },
+  {
+   "card": "Completed Compliance"
+  }
+ ],
+ "charts": [
+  {
+   "chart": "Compliance Detail",
+   "width": "Full"
+  }
+ ],
+ "creation": "2023-11-23 14:54:56.387952",
+ "dashboard_name": "Compliance Dashboard",
+ "docstatus": 0,
+ "doctype": "Dashboard",
+ "idx": 0,
+ "is_default": 0,
+ "is_standard": 1,
+ "modified": "2023-11-23 15:18:23.569210",
+ "modified_by": "Administrator",
+ "module": "Aikyam",
+ "name": "Compliance Dashboard",
+ "owner": "Administrator"
+}
