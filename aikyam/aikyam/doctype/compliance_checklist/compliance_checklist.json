@@ -1,0 +1,190 @@
+{
+ "actions": [],
+ "autoname": "naming_series:",
+ "creation": "2023-11-23 14:18:53.629853",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "subject",
+  "description",
+  "status",
+  "column_break_3",
+  "posting_date",
+  "has_due_date",
+  "due_date",
+  "applicable_act",
+  "compliance_type",
+  "form_type",
+  "remindernotifications_section",
+  "remind_before_unit",
+  "remind_before",
+  "role_to_notify",
+  "column_break_ocgw4",
+  "repeat_this_checklist",
+  "repeat_on",
+  "repeat_till"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Series",
+   "options": "CCL.#####",
+   "read_only": 1
+  },
+  {
+   "fieldname": "subject",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Subject ",
+   "reqd": 1
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Small Text",
+   "label": "Description"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Status",
+   "options": "Open\nCancelled\nOverdue\nOn Hold\nCompleted"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Now",
+   "fieldname": "posting_date",
+   "fieldtype": "Datetime",
+   "hidden": 1,
+   "label": "Posting Date",
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "has_due_date",
+   "fieldtype": "Check",
+   "label": "Has Due Date"
+  },
+  {
+   "fieldname": "due_date",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Due Date"
+  },
+  {
+   "fieldname": "applicable_act",
+   "fieldtype": "Link",
+   "label": "Applicable Act",
+   "options": "Legal Act"
+  },
+  {
+   "fieldname": "compliance_type",
+   "fieldtype": "Select",
+   "label": "Compliance Type",
+   "options": "\nGeneral Compliances\nEvent Based Compliances\nStatutory Compliances\nOthers"
+  },
+  {
+   "fieldname": "form_type",
+   "fieldtype": "Link",
+   "label": "Form Type",
+   "options": "Form Type"
+  },
+  {
+   "fieldname": "remindernotifications_section",
+   "fieldtype": "Section Break",
+   "label": "Reminder/Notifications"
+  },
+  {
+   "fieldname": "remind_before_unit",
+   "fieldtype": "Select",
+   "in_standard_filter": 1,
+   "label": "Remind Before Unit ",
+   "options": "\nDay\nMonth",
+   "reqd": 1
+  },
+  {
+   "depends_on": "eval:doc.remind_before_unit",
+   "fieldname": "remind_before",
+   "fieldtype": "Int",
+   "label": "Remind Before",
+   "mandatory_depends_on": "eval:doc.remind_before_unit"
+  },
+  {
+   "fieldname": "role_to_notify",
+   "fieldtype": "Link",
+   "label": "Role to Notify",
+   "options": "Role"
+  },
+  {
+   "fieldname": "column_break_ocgw4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "repeat_this_checklist",
+   "fieldtype": "Check",
+   "label": "Repeat This Checklist"
+  },
+  {
+   "depends_on": "repeat_this_checklist",
+   "fieldname": "repeat_on",
+   "fieldtype": "Select",
+   "label": "Repeat On",
+   "mandatory_depends_on": "repeat_this_checklist",
+   "options": "\nDaily\nWeekly\nMonthly\nQuarterly\nHalf yearly\nYearly\nEvent Based"
+  },
+  {
+   "depends_on": "repeat_this_checklist",
+   "fieldname": "repeat_till",
+   "fieldtype": "Data",
+   "label": "Repeat Till"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-11-23 14:38:17.908898",
+ "modified_by": "Administrator",
+ "module": "Aikyam",
+ "name": "Compliance Checklist",
+ "name_case": "Title Case",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Compliance User",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
