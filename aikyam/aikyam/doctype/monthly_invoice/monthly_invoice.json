@@ -1,0 +1,202 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-11-28 13:54:05.800736",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "employee_details_section",
+  "employee",
+  "name1",
+  "signature",
+  "column_break_lhgls",
+  "pan_no",
+  "email",
+  "address",
+  "invoice_section",
+  "date",
+  "invoice_month",
+  "amount",
+  "column_break_c2l9a",
+  "gst_no",
+  "invoice_number",
+  "no_of_days",
+  "rupees_in_words",
+  "column_break_05dsi",
+  "place_of_supply",
+  "bank_details_section",
+  "bank_account_no",
+  "ifsc_code",
+  "column_break_tbthf",
+  "branch_details",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "employee",
+   "fieldtype": "Link",
+   "label": "Employee",
+   "options": "Employee"
+  },
+  {
+   "fetch_from": "employee.employee_name",
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "label": "Beneficiary Name"
+  },
+  {
+   "fieldname": "employee_details_section",
+   "fieldtype": "Section Break",
+   "label": "Employee Details"
+  },
+  {
+   "fieldname": "column_break_lhgls",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "employee.current_address",
+   "fetch_if_empty": 1,
+   "fieldname": "address",
+   "fieldtype": "Small Text",
+   "label": "Address"
+  },
+  {
+   "fieldname": "invoice_section",
+   "fieldtype": "Section Break",
+   "label": "Invoice"
+  },
+  {
+   "default": "Today",
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "column_break_c2l9a",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "invoice_number",
+   "fieldtype": "Data",
+   "label": "Invoice Number"
+  },
+  {
+   "fieldname": "column_break_05dsi",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "invoice_month",
+   "fieldtype": "Select",
+   "label": "Invoice For Month",
+   "options": "January\nFebruary\nMarch\nApril\nMay\nJune\nJuly\nAugust\nSeptember\nOctober\nNovember\nDecember"
+  },
+  {
+   "default": "Karnataka",
+   "fieldname": "place_of_supply",
+   "fieldtype": "Data",
+   "label": "Place Of Supply",
+   "read_only": 1
+  },
+  {
+   "fieldname": "rupees_in_words",
+   "fieldtype": "Small Text",
+   "label": "Rupees (in words)"
+  },
+  {
+   "fieldname": "bank_details_section",
+   "fieldtype": "Section Break",
+   "label": "Bank Details"
+  },
+  {
+   "fetch_from": "employee.bank_ac_no",
+   "fetch_if_empty": 1,
+   "fieldname": "bank_account_no",
+   "fieldtype": "Data",
+   "label": "Beneficiary Bank Account No."
+  },
+  {
+   "fetch_from": "employee.ifsc_code",
+   "fieldname": "ifsc_code",
+   "fieldtype": "Data",
+   "label": "IFSC Code"
+  },
+  {
+   "fieldname": "column_break_tbthf",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Monthly Invoice",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "signature",
+   "fieldtype": "Attach",
+   "label": "Signature (150px x 150px)"
+  },
+  {
+   "fieldname": "amount",
+   "fieldtype": "Int",
+   "label": "Amount(INR)"
+  },
+  {
+   "fieldname": "no_of_days",
+   "fieldtype": "Data",
+   "label": "Number of Days"
+  },
+  {
+   "fieldname": "branch_details",
+   "fieldtype": "Small Text",
+   "label": "Branch Name and Address"
+  },
+  {
+   "fetch_from": "employee.pan_number",
+   "fieldname": "pan_no",
+   "fieldtype": "Data",
+   "label": "PAN No."
+  },
+  {
+   "fetch_from": "employee.company_email",
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email"
+  },
+  {
+   "default": "NA",
+   "fieldname": "gst_no",
+   "fieldtype": "Data",
+   "label": "GST No"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2023-12-03 16:33:46.409382",
+ "modified_by": "Administrator",
+ "module": "Aikyam",
+ "name": "Monthly Invoice",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
